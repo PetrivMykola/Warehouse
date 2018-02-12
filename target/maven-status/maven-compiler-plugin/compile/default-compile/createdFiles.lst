@@ -1,0 +1,8 @@
+net\petriv\warehouse\controller\ManufacturerServlet.class
+net\petriv\warehouse\model\Product.class
+net\petriv\warehouse\dao\ManufacturerDao.class
+net\petriv\warehouse\dao\AbstractDao.class
+net\petriv\warehouse\dao\ProductDao.class
+net\petriv\warehouse\model\Manufacturer.class
+net\petriv\warehouse\settings\HibernateUtil.class
+net\petriv\warehouse\dao\GeneralDao.class

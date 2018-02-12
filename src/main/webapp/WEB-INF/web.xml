@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+        version="2.5">
+    <display-name>Warehouse</display-name>
+
+    <servlet>
+        <servlet-name>Home</servlet-name>
+        <servlet-class>net.petriv.warehouse.controller.HomeServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ManufacturerServlet</servlet-name>
+        <servlet-class>net.petriv.warehouse.controller.ManufacturerServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ProductServlet</servlet-name>
+        <servlet-class>net.petriv.warehouse.controller.ProductServlet</servlet-class>
+    </servlet>
+
+
+    <!--mapping-->
+
+    <servlet-mapping>
+        <servlet-name>ManufacturerServlet</servlet-name>
+        <url-pattern>/Manufacturer</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ProductServlet</servlet-name>
+        <url-pattern>/Product</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Home</servlet-name>
+        <url-pattern>/Home</url-pattern>
+    </servlet-mapping>
+
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+        </jsp-property-group>
+    </jsp-config>
+    
+
+</web-app>
